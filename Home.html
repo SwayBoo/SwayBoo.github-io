@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 載入線上jquery資料庫 -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="bootstrap-3.3.1-dist/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.1-dist/dist/js/dropdown.js"></script>
+<script type="text/javascript" src="js/cycle.js"></script>
+<!-- 載入自己寫的jacascript -->
+<script type="text/javascript" src="js/Project.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Script-Type" content="text/javascript"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.1-dist/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.1-dist/dist/css/bootstrap-theme.css">
+    <title>碎步的網頁</title>
+    <link rel="stylesheet" type="text/css" href="css/Project.css">
+</head>
+<div id="sounddiv">
+    <bgsound id="sound">
+</div>
+
+<body style="background-color: black;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Home.html">
+                    <img alt="Brand" src="image/tao/Logo2.jpg" style="width: 50px;height: 50px;">
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand" style="color:green;font-size: 20px;margin-top:10px;" href="Home.html">碎步的網頁</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li><a href="About.html">關於我</a></li>
+                    <li><a href="Contact.html">聯絡方式</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">研究所作品<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="Project.html">研究所作品</a>
+                            </li>
+                            <li class="divider"></li>
+                            <!-- <li class="dropdown-header">研究所作品</li> -->
+                            <li><a href="ButterflyHunter.html"><img alt="Brand" src="image/ButterflyHunter/ButterflyHunter4.JPG" style="width: 40px;height: 40px;">　捕蝶人 ButterflyHunter</a></li>
+                            <li><a href="JN.html"><img alt="Brand" src="image/JN/JN1.jpg" style="width: 40px;height: 40px;">　靖難之役 Jinnan</a></li>
+                            <li><a href="SBGA-Maker.html"><img alt="Brand" src="image/JN/Cover1.jpg" style="width: 40px;height: 40px;">　SBGA-Maker</a></li>
+                            <li><a href="SBGA-MapMaker.html"><img alt="Brand" src="image/JN/Cover2.jpg" style="width: 40px;height: 40px;">　SBGA-MapMaker</a></li>
+                            <li><a href="ValenceBond.html"><img alt="Brand" src="image/ValenceBond/ValenceBond1.jpg" style="width: 40px;height: 40px;">　化學塔防 ValenceBond</a></li>
+                            <li><a href="Game-Shimmer.html"><img alt="Brand" src="image/Game-Shimmer/Game-Shimmer1.jpg" style="width: 40px;height: 40px;">　微光心塵 Game-Shimmer</a></li>
+                            <li class="disabled"><a href="#">狩獵世紀 Hunting Century</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">大學作品<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="Project.html">大學作品</a>
+                            </li>
+                            <li class="divider"></li>
+                            <!-- <li class="dropdown-header">大學作品</li> -->
+                            <li><a href="Games.html"><img alt="Brand" src="image/tao/Logo2.jpg" style="width: 40px;height: 40px;">　菜逃 VegetablesCome</a></li>
+                            <li><a href="UnderGround.html"><img alt="Brand" src="image/UnderGround/UnderGround0.jpg" style="width: 40px;height: 40px;">　地下秩序 UnderGround</a></li>
+                            <li><a href="MiniSlime.html"><img alt="Brand" src="image/MiniSlime/MiniSlime1.jpg" style="width: 40px;height: 40px;">　迷你史萊姆 MiniSlime</a></li>
+                            <li><a href="MUTD.html"><img alt="Brand" src="image/MusicTD/MUTD0.jpg" style="width: 40px;height: 40px;">　音樂塔防 MusicTD</a></li>
+                            <li><a href="Orangutan.html"><img alt="Brand" src="image/Orangutan/Orangutan1.jpg" style="width: 40px;height: 40px;">　猩天地 Orangutan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Other.html">其他練習</a></li>
+                    <!-- <li class="disabled"><a href="Other.html">其他練習</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="btn-toolbar navbar-fixed-bottom">
+                <div class="btn-group-xs">
+                    <div>
+                        <button type="button" class="btn btn-primary" id="TopButton">Top</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="color:white;background: url(image/black-01.png); font-size: 18px;">現在位置 :<a class="col span2" href="Home.html">首頁</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="GameNameButton">
+        <div class="col-md-12" style="background: url(image/black-01.png);margin-top: 2px;">
+            <h3 class="IntroButton" style="color: white; text-align: center;margin: 0px">碎步的網頁</h3>
+        </div>
+    </div>
+    <div class="container" id="Introduction">
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-4">
+                <p style="font-size: 25px;color:white;font-weight: bold;margin-top: 15px;">關於網頁...</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">　　歡迎來到碎步的網頁，此網頁於2016/07/02開始製作，主要是拿來放我的作品，我是個熱愛寫程式的人，幾乎任何程式都想接觸學習，而我的專長是遊戲APP製作(unity3D)，最近接觸了html5網頁設計，碰巧又快退伍即將投入職場，特別是遊戲製作方面，雖然接觸html5的時間不到半個月，製作網頁的技術尚不夠純熟，但我仍持續學習當中，希望可以再多學習一項技能。</p>
+            </div>
+            <div class="col-md-4">
+                <p style="font-size: 25px;color:white;font-weight: bold;margin-top: 15px;">製作動機...</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">　　其實跳脫寫程式以外我是一個很懶的人，除了打籃球、打電動、看電影、唱歌還有吃飯睡覺以外大部分的時間我都花在寫程式上面，也因此累積了不少作品，但我要如何讓別人快速了解我這個人以及看過我的所有作品呢?製作履歷一直是我覺得很麻煩的一件事情，畢竟我最想讓公司看到的不是我的作品有多好數量有多少，而是我的積極度以及精益求精的態度，於是我開始邊自學html5，邊製作這個網頁，一方面是將我歷年的作品做整理，另一方面是希望自己能夠藉此又學會一項新的技能。</p>
+            </div>
+            <div class="col-md-4">
+                <!-- <p style="font-size: 25px;color:white;font-weight: bold;margin-top: 15px;">其他...</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">　　</p>　 -->
+            </div>
+            <!-- <div class="col-md-10">
+                <img class="img-responsive center-block" style="margin-top:50px;margin-bottom: 50px;" src="image/tao/team.jpg" alt="圖片已失效">
+            </div> -->
+        </div>
+    </div>
+    <div class="container">
+    <h4 style="color: white; text-align: center;margin: 30px"><br>瀏覽人數:<img src="http://www.reliablecounter.com/count.php?page=https://dl.dropboxusercontent.com/u/141994195/html5/Games.html&digit=style/plain/31/&reloads=0" alt="" title="" border="0"></h4>
+    </div>
+
+</body>
+
+</html>
