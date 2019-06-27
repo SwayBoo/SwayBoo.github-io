@@ -1,1 +1,342 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+<!-- 載入線上jquery資料庫 -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="bootstrap-3.3.1-dist/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.1-dist/dist/js/dropdown.js"></script>
+<script type="text/javascript" src="js/cycle.js"></script>
+<!-- 載入自己寫的jacascript -->
+<script type="text/javascript" src="js/About.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Script-Type" content="text/javascript"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.1-dist/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.1-dist/dist/css/bootstrap-theme.css">
+    <title>碎步的網頁</title>
+    <link rel="stylesheet" type="text/css" href="css/Project.css">
+</head>
+<div id="sounddiv">
+    <bgsound id="sound">
+</div>
+
+<body style="background-color: black;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Home.html">
+                    <img alt="Brand" src="image/tao/Logo2.jpg" style="width: 50px;height: 50px;">
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color:green;font-size: 20px;margin-top:10px;" href="Home.html">碎步的網頁</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li><a href="About.html">關於我</a></li>
+                    <li><a href="Contact.html">聯絡方式</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">研究所作品<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="Project.html">研究所作品</a>
+                            </li>
+                            <li class="divider"></li>
+                            <!-- <li class="dropdown-header">研究所作品</li> -->
+                            <li><a href="ButterflyHunter.html"><img alt="Brand" src="image/ButterflyHunter/ButterflyHunter4.JPG" style="width: 40px;height: 40px;">　捕蝶人 ButterflyHunter</a></li>
+                            <li><a href="JN.html"><img alt="Brand" src="image/JN/JN1.jpg" style="width: 40px;height: 40px;">　靖難之役 Jinnan</a></li>
+                            <li><a href="SBGA-Maker.html"><img alt="Brand" src="image/JN/Cover1.jpg" style="width: 40px;height: 40px;">　SBGA-Maker</a></li>
+                            <li><a href="SBGA-MapMaker.html"><img alt="Brand" src="image/JN/Cover2.jpg" style="width: 40px;height: 40px;">　SBGA-MapMaker</a></li>
+                            <li><a href="ValenceBond.html"><img alt="Brand" src="image/ValenceBond/ValenceBond1.jpg" style="width: 40px;height: 40px;">　化學塔防 ValenceBond</a></li>
+                            <li><a href="Game-Shimmer.html"><img alt="Brand" src="image/Game-Shimmer/Game-Shimmer1.jpg" style="width: 40px;height: 40px;">　微光心塵 Game-Shimmer</a></li>
+                            <li class="disabled"><a href="#">狩獵世紀 Hunting Century</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">大學作品<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="Project.html">大學作品</a>
+                            </li>
+                            <li class="divider"></li>
+                            <!-- <li class="dropdown-header">大學作品</li> -->
+                            <li><a href="Games.html"><img alt="Brand" src="image/tao/Logo2.jpg" style="width: 40px;height: 40px;">　菜逃 VegetablesCome</a></li>
+                            <li><a href="UnderGround.html"><img alt="Brand" src="image/UnderGround/UnderGround0.jpg" style="width: 40px;height: 40px;">　地下秩序 UnderGround</a></li>
+                            <li><a href="MiniSlime.html"><img alt="Brand" src="image/MiniSlime/MiniSlime1.jpg" style="width: 40px;height: 40px;">　迷你史萊姆 MiniSlime</a></li>
+                            <li><a href="MUTD.html"><img alt="Brand" src="image/MusicTD/MUTD0.jpg" style="width: 40px;height: 40px;">　音樂塔防 MusicTD</a></li>
+                            <li><a href="Orangutan.html"><img alt="Brand" src="image/Orangutan/Orangutan1.jpg" style="width: 40px;height: 40px;">　猩天地 Orangutan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Other.html">其他練習</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="btn-toolbar navbar-fixed-bottom">
+                <div class="btn-group-xs">
+                    <div>
+                        <button type="button" class="btn btn-primary" id="TopButton">Top</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="color:white;background: url(image/black-01.png); font-size: 18px;">現在位置 :<a class="col span2" href="About.html">關於我</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="InfoButton">
+        <div class="col-md-12" style="background: url(image/black-01.png);margin-top: 2px;">
+            <h3 class="IntroButton" style="color: white; text-align: center;margin: 0px">基本資料</h3>
+        </div>
+    </div>
+    <div class="container" id="Info">
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-4">
+                <img class="img-responsive center-block" alt="Brand" src="image/About/About.JPG" style="margin-top: 30px;margin-bottom: 30px;">
+            </div>
+            <div class="col-md-8">
+                <p style="font-size: 15px;color:white;font-weight: bold;margin-top: 40px;">姓名:余欣鴻</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">綽號:碎步</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">出生:1990/09/04</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">連絡電話：0922-670053</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">求學歷程：<br>2013/09－2015/07   國立台灣科技大學應用科技研究所<br>2009/09－2013/06 南台科技大學多媒體與電腦娛樂科學系</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">工作經驗：<br>2012/09－2013/06 課堂專案演練教學助理（協助指導學生完成遊戲專題製作）<br>2012/07－2012/09 凱鈿行動科技有限公司Unity工程師實習(遊戲APP製作)</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">個性：活潑、熱情</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">興趣：打籃球、健身、聽音樂、看電影、遊戲製作與遊戲企劃發想、學習不同程式語言</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">擅長軟體：Unity3D(Java、C#、NGUI)、Arduino體感程式、Flash、html5(css、jquery、bootstrap)、Java(學習中)</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">證照：電腦輔助機械製圖乙級、電腦輔助機械製圖丙級、機械製圖丙級、 ACA Adobe PhotoshopCS3、ACA Adobe FlashCS5</p>
+                <div class="btn-toolbar">
+                    <div class="btn-group-xs">
+                        <div>
+                            <button type="button" class="btn btn-primary" id="GoIntroduction">自我介紹</button>
+                            <button type="button" class="btn btn-primary" id="GoConference">研討會&發表</button>
+                            <button type="button" class="btn btn-primary" id="GoRace">比賽經驗</button>
+                            <button type="button" class="btn btn-primary" id="GoJob">相關工作與活動經驗</button>
+                            <button type="button" class="btn btn-primary" id="GoExtracurricularActivities">課外活動與社團</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="IntroductionButton">
+        <div class="col-md-12" style="background: url(image/black-01.png);margin-top: 2px;">
+            <h3 class="IntroButton" style="color: white; text-align: center;margin: 0px">自我介紹</h3>
+        </div>
+    </div>
+    <div class="container" id="Introduction">
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-4">
+                <p style="font-size: 25px;color:white;font-weight: bold;margin-top: 15px;">家庭...</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">　　國中時，爸媽因理念不合決議離婚，我跟媽媽，弟弟跟爸爸，高中時媽媽因癌症不幸過世，從此我便開始一個人生活，雖與爸爸仍有聯繫，但為了不讓他擔心，我選擇獨自面對打擊與壓力，也因此難過了很久，陷入了人生中的低潮；為了使我重新振作，朋友們找了許多遊戲，希望我與他們一同玩樂，漸漸地我在玩遊戲的過程中獲得成就並因此重拾歡笑走出傷痛，也因為這個原因使我相信遊戲能夠帶給人正面的力量，所以我大學選擇了多媒體電腦娛樂系，希望有朝一日能夠透過我製作的遊戲，讓更多人得到歡樂。
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p style="font-size: 25px;color:white;font-weight: bold;margin-top: 15px;">大學...</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">　　在大學時我就讀南台科技大學多媒體電腦娛樂系，這也是我第一次接觸程式設計，沒想到我對程式編碼充滿興趣，也更加確定了未來工作的方向，在課堂之餘，除積極參加遊戲製作的比賽與相關活動以及系藍、熱舞、系學會等社團活動，同時也擔任學校專案演練的教學助理，協助學生完成專題遊戲的製作，並於大三下學期時前往凱鈿行動科技有限公司實習，擔任Unity工程師，這段期間除了讓我更了解該公司的營運流程以外，也透過與前輩們共事、交流增進了遊戲製作的技術以及視野的提升。
+                </p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">
+                　　此外，我在遊戲製作方面也取得了不錯的成績，除了參展得獎以外，透過比賽以及活動的交流也認識許多遊戲開發人員，其中也有收到許多公司的邀約以及合作企劃。
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p style="font-size: 25px;color:white;font-weight: bold;margin-top: 15px;">研究所...</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">　　大學畢業後，我如願地進入了台灣科技大學應用科技所<a style="color: yellow;" href="http://www.ntustmeg.net/">侯惠澤教授的MEG團隊</a>，MEG團隊致力於翻轉教學的推廣，而在這裡最主要的課題是如何將"學習"與"科技"以及"遊戲"互相結合，除了要選擇適合的學習材料外，學習者對遊戲的科技接受度、回饋以及情境的設計都會影響到學習者對遊戲投入的狀態與學習效果，這對我而言是個全新的領域，但在這兩年我學到了許多知識，也依照這些理論製作了許多具有教育意義的遊戲，同時也出國參加了許多研討會，而我的作品也真的有被線上的老師使用在翻轉教學上。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="ConferenceButton">
+        <div class="col-md-12" style="background: url(image/black-01.png);margin-top: 2px;">
+            <h3 class="IntroButton" style="color: white; text-align: center;margin: 0px">研討會&發表</h3>
+        </div>
+    </div>
+    <div class="container" id="Conference">
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-11">
+                <p style="font-size: 15px;color:white;font-weight: bold;margin-top: 40px;margin-bottom: 10px;">余欣鴻(2015)。整合情境學習與認知鷹架之歷史科戰略遊戲式測驗環境之發展與評估：接受度、心流、學習成效與歷程之分析。國立臺灣科技大學應用科技研究所，未出版，台北市。</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;margin-bottom: 10px;">Yu, H. H., Yang, J. K., Chen, H. W., Yu, T. F., & Hou, H. T. (2015). Jingnan Campaign©-Using Game-Based Assessment with the Mechanism of Strategy Games for History Teaching: System Development and Learning Evaluation. Paper presented at 4th International Conference on Learning Technologies and Learning Environments (LTLE2015), Okayama, Japan.</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;margin-bottom: 10px;">Hou, H. T., Wang, S. M., Yu, S. H & Liu, S. H. (2014). The Development and Evaluation of an Educational Game- Shimmer© with Computer Visualization for Optics Learning. Paper presented at the 22th International Conference on Computers in Education (ICCE2014), Nara, Japan, 11/30-12/4, 2014.</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;margin-bottom: 40px;">顏翊芳、蘇品莼、張韶宸、余欣鴻、張士凱（2014年，5月）。課業壓力在課業上的網路休閒及學習自我效能相關之研究。第十八屆全球華人計算機教育應用大會（GCCCE 2014）。上海，中國</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="RaceButton">
+        <div class="col-md-12" style="background: url(image/black-01.png);margin-top: 2px;">
+            <h3 class="IntroButton" style="color: white; text-align: center;margin: 0px">比賽經驗</h3>
+        </div>
+    </div>
+    <div class="container" id="Race">
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-11">
+                <p style="font-size: 15px;color:white;font-weight: bold;margin-top: 40px;">2013年青春設計節 數位科技與遊戲類 菜逃 銀獎</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2013年大中華區第一屆Unity大賽學生移動組 菜逃 優選</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2013年高雄放視大賞 遊戲類 菜逃 入圍</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2013年巴哈姆特ACG創作大賽 遊戲類 菜逃 入圍</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2013年鈊象盃遊戲與遊戲機創意設計比賽 音樂塔防 最佳創意獎</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2012年4C數位創作競賽遊戲創作組 行動類 音樂塔防 優勝</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2012年4C數位創作競賽遊戲創作組 行動類 音樂塔防 雷爵贊助獎</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2012年第七屆戰國策校園創業競賽 創意組競賽 AFU阿芙　 佳作</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2012年中華電信電信創新應用大賽 (F)整合行銷　Space Chat 複賽</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2012年巴哈姆特ACG創作大賽 遊戲類 Circus Music Box 入圍</p>
+            </div>
+        </div>
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+                <!-- <img class="img-responsive center-block" style="height: 300px;width: 300px;margin-top:30px;margin-bottom: 30px;" src="image/tao/tao7.png" alt="圖片已失效"> -->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox" style="margin-top:50px;margin-bottom: 50px;"">
+                    <div class="item active">
+                        <img class="img-responsive center-block" src="image/About/Race/race1.jpg" alt="Chania">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        菜逃 高雄青春設計節銀獎
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race2.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        菜逃 第一屆Unity大賽學生移動組 優選
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race3.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        4C音樂塔防優勝(左三)
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race4.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        4C音樂塔防雷爵贊助獎(右一)
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race9.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        4C南台最佳團體精神獎&最佳團體表現獎(右後二)
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race5.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        4C音樂塔防得獎證明(序4)
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race6.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        第七屆戰國策校園創業競賽 創意組競賽 AFU阿芙　 佳作
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race7.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        中華電信電信創新應用大賽 (F)整合行銷　45組 Space Chat 複賽
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="image/About/Race/race8.jpg" alt="...">
+                        <div class="carousel-caption" style="background: url(image/black-01.png);margin-bottom: 8px;">
+                        巴哈姆特ACG創作大賽 02.Circus Music Box 入圍
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+     <div class="container" id="JobButton">
+        <div class="col-md-12" style="background: url(image/black-01.png);margin-top: 2px;">
+            <h3 class="IntroButton" style="color: white; text-align: center;margin: 0px">遊戲相關工作與活動經驗</h3>
+        </div>
+    </div>
+    <div class="container" id="Job">
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-8">
+                <p style="font-size: 15px;color:white;font-weight: bold;">狩獵世紀 2014台北新一代設計展參展</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">微光心塵 2014台北新一代設計展參展</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">2013 Global Game Jam遊戲開發活動</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">菜逃　2013年南台校內展參展</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">菜逃　2013高雄放視大賞參展</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">菜逃　2013高雄青春設計節參展</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;">菜逃　2013台北新一代設計展參展</p>
+                <p style="font-size: 15px;color:white;font-weight: bold;margin-bottom: 40px;">音樂塔防 2012年南台校內展參展</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="ExtracurricularActivitiesButton">
+        <div class="col-md-12" style="background: url(image/black-01.png);margin-top: 2px;">
+            <h3 class="IntroButton" style="color: white; text-align: center;margin: 0px">課外活動與社團</h3>
+        </div>
+    </div>
+    <div class="container" id="ExtracurricularActivities">
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-4">
+            <img class="img-responsive center-block" alt="Brand" src="image/Activities/Activities1.jpg" style="margin-top: 30px;margin-bottom: 30px;">
+            <p style="font-size: 15px;color:white;font-weight: bold;">大學 多樂系系學會 女僕週執事(左一)</p>
+            </div>
+            <div class="col-md-8">
+                 <img class="img-responsive center-block" alt="Brand" src="image/Activities/Activities2.jpg" style="margin-top: 30px;margin-bottom: 30px;">
+                 <p style="font-size: 15px;color:white;font-weight: bold;">大學 多樂系系學會 女僕週執事(坐椅子)</p>
+            </div>
+        <div class="col-md-12" style="background: url(image/HeadlLineBG.jpg);margin-top: 2px;">
+            <div class="col-md-4">
+            <img class="img-responsive center-block" alt="Brand" src="image/Activities/Activities3.jpg" style="margin-top: 30px;margin-bottom: 30px;">
+            <p style="font-size: 15px;color:white;font-weight: bold;">碩士 精誠學院系籃(右邊數來第九)</p>
+            </div>
+            <div class="col-md-4">
+            <img class="img-responsive center-block" alt="Brand" src="image/Activities/Activities4.jpg" style="margin-top: 30px;margin-bottom: 30px;">
+            <p style="font-size: 15px;color:white;font-weight: bold;">大學 多樂系系籃(右前一)</p>
+            </div>
+            <div class="col-md-4">
+            <img class="img-responsive center-block" alt="Brand" src="image/Activities/Activities5.jpg" style="margin-top: 30px;margin-bottom: 30px;">
+            <p style="font-size: 15px;color:white;font-weight: bold;">舞濱籃球聯盟(右邊數來第八)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4 style="color: white; text-align: center;margin: 30px"><br>瀏覽人數:<img src="http://www.reliablecounter.com/count.php?page=https://dl.dropboxusercontent.com/u/141994195/html5/Games.html&digit=style/plain/31/&reloads=0" alt="" title="" border="0"></h4>
+    </div>
+</body>
+
+</html>
